@@ -1,0 +1,13 @@
+{
+  "name": "spellmaster-parent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "家长微信小程序 - 小学生英语单词拼写平台",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/wechat-miniprogram": "^3.4.7",
+    "typescript": "^5.4.0"
+  }
+}

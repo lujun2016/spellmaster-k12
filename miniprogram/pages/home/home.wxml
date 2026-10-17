@@ -1,0 +1,34 @@
+<view class="home">
+  <view class="topbar card">
+    <view class="child-info">
+      <view class="avatar">{{childInitial}}</view>
+      <view class="child-meta">
+        <view class="child-name">{{childName}}</view>
+        <view class="child-grade">{{gradeText}}</view>
+      </view>
+    </view>
+    <rank-badge rank-value="{{rankValue}}" />
+  </view>
+
+  <view class="stage">
+    <child-animation scene="{{animationType}}" bind:viewSummary="goSummary" />
+  </view>
+
+  <view class="state-desc card">
+    <view class="state-title">{{stateTitle}}</view>
+    <view class="state-text">{{stateText}}</view>
+  </view>
+
+  <view wx:if="{{showSummaryBtn}}" class="summary-banner" bindtap="goSummary">
+    <view class="sb-text">
+      <view class="sb-title">查看本次学习汇总</view>
+      <view class="sb-sub">孩子刚结束学习，点击查看本次成果</view>
+    </view>
+    <view class="sb-arrow">›</view>
+  </view>
+
+  <view class="actions">
+    <button class="act" bindtap="goSummary">本次学习汇总</button>
+    <button class="act ghost" bindtap="refresh">刷新状态</button>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+/src/generated/prisma
+
+# 开发环境验证码日志（仅本地调试用，勿提交）
+.dev-verification-code.log
+
+# ==================== 六级复习工具 ====================
+# 本地音频缓存（TTS 合成 / 真题 m3u8 转码产物），可再生，别提交
+/.cet6-audio/
+
+# SQLite 数据库（含学习和复习进度，属于个人数据）
+/prisma/cet6/dev.db
+/prisma/cet6/dev.db-journal
+
+# 抓下来的第三方题库/词库原始数据（体积大，跑脚本可重新拉取）
+/cet6-data/papers/quiz/
+/cet6-data/raw/
+/cet6-data/words.json.gz
+prisma/cet6/backups/
+
+# secrets
+.env
+.env.*

@@ -1,0 +1,101 @@
+.login-wrap {
+  padding: 80rpx 48rpx;
+}
+.login-header {
+  text-align: center;
+  margin-bottom: 56rpx;
+}
+.logo {
+  width: 128rpx;
+  height: 128rpx;
+  line-height: 128rpx;
+  border-radius: 32rpx;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 60rpx;
+  font-weight: 700;
+  margin: 0 auto 24rpx;
+}
+.login-title {
+  font-size: 44rpx;
+  font-weight: 700;
+}
+.login-sub {
+  font-size: 26rpx;
+  color: #9ca3af;
+  margin-top: 14rpx;
+}
+.field {
+  margin-bottom: 32rpx;
+}
+.label {
+  font-size: 28rpx;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 14rpx;
+}
+.input {
+  background: #f3f4f6;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  font-size: 30rpx;
+}
+.code-row {
+  display: flex;
+  align-items: center;
+}
+.code-input {
+  flex: 1;
+  margin-right: 20rpx;
+}
+.code-btn {
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 26rpx;
+  margin: 0;
+}
+.code-btn.disabled {
+  color: #9ca3af;
+  background: #f3f4f6;
+}
+.login-btn {
+  margin-top: 20rpx;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 12rpx;
+  font-size: 34rpx;
+  padding: 24rpx 0;
+}
+.dev-tip {
+  font-size: 24rpx;
+  color: #9ca3af;
+  margin-top: 32rpx;
+  line-height: 1.6;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 0 28rpx;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1rpx;
+  background: #e5e7eb;
+}
+.divider-text {
+  padding: 0 24rpx;
+  font-size: 24rpx;
+  color: #9ca3af;
+}
+.wechat-btn {
+  background: #07c160;
+  color: #fff;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  padding: 24rpx 0;
+}
+.wechat-btn::after {
+  border: none;
+}

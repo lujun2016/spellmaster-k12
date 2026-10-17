@@ -1,0 +1,25 @@
+<view class="profile">
+  <view class="card head-card">
+    <view class="avatar-lg">{{initial}}</view>
+    <view class="head-meta">
+      <view class="p-name">{{name}}</view>
+      <view class="p-grade">{{gradeText}}</view>
+    </view>
+    <rank-badge rank-value="{{rankValue}}" />
+  </view>
+
+  <view class="card">
+    <view class="card-title">当前段位</view>
+    <view class="rank-big">{{rankName}}</view>
+    <view class="muted">段位只升不降，继续加油！</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">段位规则</view>
+    <view class="muted line">青铜 → 钻石：单课拼写全对逐级晋升</view>
+    <view class="muted line">星耀 → 传奇王者：单元挑战全对晋升</view>
+    <view class="muted line">传奇 N×20 星：每多通过一个单元挑战 +20 星</view>
+  </view>
+
+  <button class="logout" bindtap="onLogout">退出登录</button>
+</view>

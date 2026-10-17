@@ -1,0 +1,9 @@
+node_modules/
+project.private.config.json
+*.log
+.DS_Store
+
+# DevTools compiles .ts -> .js next to source; ignore build artifacts
+*.js
+*.js.map
+miniprogram_npm/

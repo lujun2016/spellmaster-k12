@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/summary/summary",
+    "pages/history/history",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4F46E5",
+    "navigationBarTitleText": "家长助手",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F6FA"
+  },
+  "tabBar": {
+    "color": "#9CA3AF",
+    "selectedColor": "#4F46E5",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "学习动态" },
+      { "pagePath": "pages/profile/profile", "text": "学习档案" },
+      { "pagePath": "pages/history/history", "text": "历史" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

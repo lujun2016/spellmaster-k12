@@ -1,0 +1,68 @@
+<view class="anim">
+  <!-- 空闲：电脑桌前，头顶冒字母泡泡 -->
+  <view wx:if="{{scene === 'idle'}}" class="scene idle">
+    <view class="kid">
+      <view class="head"></view>
+      <view class="body"></view>
+    </view>
+    <view class="desk"></view>
+    <view class="bubbles">
+      <text class="bubble b1">A</text>
+      <text class="bubble b2">B</text>
+      <text class="bubble b3">C</text>
+      <text class="bubble b4">D</text>
+    </view>
+    <view class="caption">空闲中：字母在脑海里冒泡</view>
+  </view>
+
+  <!-- 学习：单词涌入大脑，周围图标闪烁 -->
+  <view wx:elif="{{scene === 'learning'}}" class="scene learning">
+    <view class="words-in">
+      <text class="w w1">apple</text>
+      <text class="w w2">banana</text>
+      <text class="w w3">cat</text>
+      <text class="w w4">dog</text>
+    </view>
+    <view class="kid">
+      <view class="head"></view>
+      <view class="body"></view>
+    </view>
+    <view class="icons">
+      <text class="ic ic1">灯泡</text>
+      <text class="ic ic2">化学</text>
+      <text class="ic ic3">机械</text>
+    </view>
+    <view class="caption">学习中：单词正涌入大脑</view>
+  </view>
+
+  <!-- 挑战：红头巾跑步机，头顶计时器 -->
+  <view wx:elif="{{scene === 'challenging'}}" class="scene challenging">
+    <view class="kid run">
+      <view class="band"></view>
+      <view class="head"></view>
+      <view class="body"></view>
+    </view>
+    <view class="treadmill">
+      <view class="belt">
+        <text class="belt-word">word</text>
+        <text class="belt-word">spell</text>
+        <text class="belt-word">apple</text>
+        <text class="belt-word">practice</text>
+      </view>
+    </view>
+    <view class="stopwatch">{{stopwatch}}″</view>
+    <view class="caption">挑战中：红头巾奔跑闯关</view>
+  </view>
+
+  <!-- 课后：做操放松，可查看汇总 -->
+  <view wx:else class="scene exercising">
+    <view class="kid exercise"></view>
+    <view class="friends">
+      <view class="friend f1"></view>
+      <view class="friend f2"></view>
+      <view class="friend f3"></view>
+    </view>
+    <view class="caption">课后放松：孩子正在做操</view>
+    <button class="ex-btn" bindtap="onViewSummary">查看本次学习汇总</button>
+  </view>
+</view>

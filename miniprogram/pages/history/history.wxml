@@ -1,0 +1,21 @@
+<view class="history">
+  <view wx:if="{{loading}}" class="muted center">加载中…</view>
+
+  <view wx:elif="{{list.length === 0}}" class="card center">
+    <view class="empty-title">暂无历史记录</view>
+    <view class="muted">孩子结束学习后，这里会生成汇总。</view>
+  </view>
+
+  <view wx:else>
+    <view wx:for="{{list}}" wx:key="id" class="card item">
+      <view class="item-top">
+        <text class="item-date">{{item.date}}</text>
+        <text wx:if="{{item.challengeCompleted}}" class="tag">已完成挑战</text>
+      </view>
+      <view class="item-row">
+        <text>练习单词：{{item.wordsPracticed}} 个</text>
+        <text>耗时：{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+</view>

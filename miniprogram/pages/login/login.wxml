@@ -1,0 +1,61 @@
+<view class="login-wrap">
+  <view class="login-header">
+    <view class="logo">拼</view>
+    <view class="login-title">家长助手</view>
+    <view class="login-sub">绑定孩子家长手机号，随时查看学习动态</view>
+  </view>
+
+  <view class="card">
+    <view class="field">
+      <text class="label">手机号</text>
+      <input
+        class="input"
+        type="number"
+        maxlength="11"
+        placeholder="请输入注册时登记的家长手机号"
+        value="{{phone}}"
+        bindinput="onPhoneInput"
+      />
+    </view>
+
+    <view class="field">
+      <text class="label">验证码</text>
+      <view class="code-row">
+        <input
+          class="input code-input"
+          type="number"
+          maxlength="6"
+          placeholder="6 位验证码"
+          value="{{code}}"
+          bindinput="onCodeInput"
+        />
+        <button
+          class="code-btn {{counting ? 'disabled' : ''}}"
+          size="mini"
+          disabled="{{counting}}"
+          bindtap="onSendCode"
+        >{{counting ? countdown + 's' : '获取验证码'}}</button>
+      </view>
+    </view>
+
+    <button class="login-btn" bindtap="onLogin" loading="{{loading}}">登 录</button>
+    <view class="dev-tip">开发环境：验证码会打印在 Web 后端控制台，请查收后填入。</view>
+
+    <view class="divider"><text class="divider-text">或</text></view>
+
+    <!-- 微信手机号一键登录：生产用真实授权按钮，开发模拟改为手动输入 -->
+    <button
+      wx:if="{{wechatMock}}"
+      class="wechat-btn"
+      bindtap="onWechatMockLogin"
+      loading="{{wechatLoading}}"
+    >微信一键登录（开发模拟）</button>
+    <button
+      wx:else
+      class="wechat-btn"
+      open-type="getPhoneNumber"
+      bindgetphonenumber="onWechatLogin"
+      loading="{{wechatLoading}}"
+    >微信手机号一键登录</button>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "properties": {
+    "scene": {
+      "type": "string",
+      "value": "idle"
+    }
+  }
+}

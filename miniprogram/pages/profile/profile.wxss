@@ -1,0 +1,50 @@
+.profile {
+  padding: 24rpx;
+}
+.head-card {
+  display: flex;
+  align-items: center;
+}
+.avatar-lg {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 44rpx;
+  font-weight: 700;
+  margin-right: 24rpx;
+}
+.head-meta {
+  flex: 1;
+}
+.p-name {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.p-grade {
+  font-size: 26rpx;
+  color: #9ca3af;
+  margin-top: 8rpx;
+}
+.rank-big {
+  font-size: 48rpx;
+  font-weight: 800;
+  color: #4f46e5;
+  margin-bottom: 12rpx;
+}
+.muted.line {
+  display: block;
+  margin-bottom: 10rpx;
+  line-height: 1.5;
+}
+.logout {
+  margin-top: 12rpx;
+  background: #fff;
+  color: #ef4444;
+  border: 2rpx solid #ef4444;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+}

@@ -1,0 +1,17 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8rpx 20rpx;
+  border-radius: 999rpx;
+  border: 2rpx solid transparent;
+  font-size: 26rpx;
+}
+.dot {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.name {
+  font-weight: 600;
+}

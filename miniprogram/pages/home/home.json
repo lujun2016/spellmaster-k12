@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "学习动态",
+  "usingComponents": {
+    "child-animation": "/components/animations/child-animation/child-animation",
+    "rank-badge": "/components/rank-badge/rank-badge"
+  }
+}

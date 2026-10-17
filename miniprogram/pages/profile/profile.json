@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "学习档案",
+  "usingComponents": {
+    "rank-badge": "/components/rank-badge/rank-badge"
+  }
+}
